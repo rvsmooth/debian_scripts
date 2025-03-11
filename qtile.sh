@@ -93,3 +93,9 @@ echo "Done"
 echo "Get wallpapers..."
 git clone https://github.com/rvsmooth/wallpapers ~/Pictures/wallpapers
 echo "Done"
+
+echo "Install starship"
+curl -sS https://starship.rs/install.sh | sh 
+
+echo "Install floorp"
+curl -fsSL https://floorp.app/install.sh | sh
