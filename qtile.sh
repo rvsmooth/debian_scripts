@@ -3,6 +3,7 @@
 qtile_packages=(
 "alsa-utils"
 "curl"
+"git"
 "libpangocairo-1.0-0"
 "libxkbcommon-dev"
 "libxkbcommon-x11-dev"
@@ -83,3 +84,12 @@ echo "Installing nwg-look"
 source nwg-look.sh
 
 source nerdfonts.sh
+
+echo "Setting up bluetooth..."
+sudo apt install -y bluez blueman
+sudo systemctl enable bluetooth 
+echo "Done"
+
+echo "Get wallpapers..."
+git clone https://github.com/rvsmooth/wallpapers ~/Pictures/wallpapers
+echo "Done"
