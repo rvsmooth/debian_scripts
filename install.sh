@@ -166,3 +166,12 @@ PYELL Enable sddm
 sudo systemctl enable sddm 
 PDONE 
 
+PYELL Setting up fonts 
+source nerdfonts.sh 
+PDONE 
+
+PYELL Getting wallpapers 
+git clone https://github.com/rvsmooth/wallpapers ~/Pictures/wallpapers 
+PDONE 
+
+
